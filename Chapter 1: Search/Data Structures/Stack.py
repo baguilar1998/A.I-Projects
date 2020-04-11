@@ -16,6 +16,12 @@ class Stack:
             raise Exception("Stack is empty")
         return self.stack[-1]
 
+    def contains(self,obj):
+        for item in self.stack:
+            if item == obj:
+                return True
+        return False
+    
     def size(self):
         return len(self.stack)
 

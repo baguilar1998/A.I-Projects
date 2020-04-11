@@ -18,6 +18,12 @@ class Queue:
             raise Exception("Queue is empty")
         return self.queue[0]
     
+    def contains(self, obj):
+        for item in self.queue:
+            if obj == item:
+                return True
+        return False
+    
     def size(self):
         return len(self.queue)
 
